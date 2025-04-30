@@ -26,6 +26,15 @@ import CompletedStatus from '../media/MiniProject3/CompletedStatus.mp4';
 import DeleteOrder from '../media/MiniProject3/DeleteOrder.mp4';
 import Gameplay from '../media/MiniProject2/Gameplay.mp4';
 import RestOfTheWebsite from '../media/MiniProject2/RestOfTheWebsite.mp4';
+import CapstonePreview from '../media/CapstoneProject/CapstonePreview.png';
+
+import CapstoneHome from '../media/CapstoneProject/Home page.mp4';
+import CapstoneCharacter from '../media/CapstoneProject/Character page.mp4';
+import CapstoneQuiz from '../media/CapstoneProject/Quiz page.mp4';
+import CapstoneJasmineDragon1 from '../media/CapstoneProject/Jasmine Dragon pt 1.mp4';
+import CapstoneJasmineDragon2 from '../media/CapstoneProject/Jasmine Dragon pt 2.mp4';
+import CapstoneJasmineDragon3 from '../media/CapstoneProject/Jasmine Dragon pt 3.mp4';
+import CapstoneJasmineDragon4 from '../media/CapstoneProject/Jasmine Dragon pt 4.mp4';
 
 
 
@@ -77,10 +86,19 @@ const courseProjects = [
   },
   {
     title: 'Capstone Project',
+    previewImage: CapstonePreview,
     description: 'This is a short description of the Capstone Project.',
     images: [
-      { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'Image 1 of Capstone Project' },
-      { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'Image 2 of Capstone Project' },
+      { src: CapstonePreview, caption: 'Image 1 of Capstone Project' },
+      { src: CapstoneHome, caption: 'Image 2 of Capstone Project' , type:'video'},
+      { src: CapstoneCharacter, caption: 'Image 2 of Capstone Project' , type:'video'},
+      { src: CapstoneQuiz, caption: 'Image 2 of Capstone Project' , type:'video'},
+      { src: CapstoneJasmineDragon1, caption: 'Image 2 of Capstone Project', type:'video' },
+      { src: CapstoneJasmineDragon2, caption: 'Image 2 of Capstone Project' , type:'video'},
+      { src: CapstoneJasmineDragon3, caption: 'Image 2 of Capstone Project', type:'video' },
+      { src: CapstoneJasmineDragon4, caption: 'Image 2 of Capstone Project', type:'video' },
+
+
     ],
   },
 ];
