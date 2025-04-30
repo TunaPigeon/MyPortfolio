@@ -45,7 +45,6 @@ const courseProjects = [
   {
     title: 'Mini Project 1: Avatar Database',
     previewImage: HomePagePreview,
-    description: 'Avatar Database',
     images: [
       { src: HomePagePreview, caption: 'I was tasked to create an Interactive Data-Driven Web Application, by combining HTML, CSS, JavaScript, charts for data representation, and leverage Fetch/Axios for data retrieval. The data i used belong to an Avatar API and i used that to create an Avatar Database.' },
       { src: CharacterPageVideo, caption: 'This is the character page, showing off each character dataset provided by the api. With each character block, when clicked, it will expand and show information about the character.', type:'video'},
@@ -59,9 +58,8 @@ const courseProjects = [
     ],
   },
   {
-    title: 'Mini Project 2',
+    title: 'Mini Project 2: React Updated Avatar Database ',
     previewImage: CharacterPagePreview,
-    description: 'This is a short description of Mini Project 2.',
     images: [
       { src: CharacterPagePreview, caption: 'I was tasked to create a dynamic and interactive frontend Application that uses the core principles of React. I updated my first project by creating it again in React, but with an additional interactive teashop game.' },
       { src: RestOfTheWebsite, caption: 'This was suppose to be an updated version of my mini project 1 web page, but as we did mini project 3 before this project, I came up with an idea of a teashop simulator (using the api used in mini project 3). It then went from a simulator to a game, which took up majority of the time, which is which these pages arent fully complete. Instead i was able to get an interactive teashop game working, shown in the next slide.', type:'video' },
@@ -70,9 +68,8 @@ const courseProjects = [
     ],
   },
   {
-    title: 'Mini Project 3',
+    title: 'Mini Project 3: Teashop backend',
     previewImage: MiniProject3Preview,
-    description: 'Teashop Backend.',
     images: [
       { src: MiniProject3Preview, caption: 'I was tasked to develop a robust backend application that leverages one or more chosen 3rd party APIs, while incorporating a database to enhance functionality. I used another Avatar database with more characters and information, and used Bruno to test out the CRUD operations, implemented using controllers and models.' },
       { src: CharactersFromAPItoDatabase, caption: 'This shows that I am grabbing the data from the api and moving it into a database' , type:'video' },
@@ -85,18 +82,17 @@ const courseProjects = [
     ],
   },
   {
-    title: 'Capstone Project',
+    title: 'Capstone Project: Avatar Universe Hub',
     previewImage: CapstonePreview,
-    description: 'This is a short description of the Capstone Project.',
     images: [
-      { src: CapstonePreview, caption: 'Image 1 of Capstone Project' },
-      { src: CapstoneHome, caption: 'Image 2 of Capstone Project' , type:'video'},
-      { src: CapstoneCharacter, caption: 'Image 2 of Capstone Project' , type:'video'},
-      { src: CapstoneQuiz, caption: 'Image 2 of Capstone Project' , type:'video'},
-      { src: CapstoneJasmineDragon1, caption: 'Image 2 of Capstone Project', type:'video' },
-      { src: CapstoneJasmineDragon2, caption: 'Image 2 of Capstone Project' , type:'video'},
-      { src: CapstoneJasmineDragon3, caption: 'Image 2 of Capstone Project', type:'video' },
-      { src: CapstoneJasmineDragon4, caption: 'Image 2 of Capstone Project', type:'video' },
+      { src: CapstonePreview, caption: 'This project I had to combine both mini project 2 and 3. I was able to complete all pages, and worked on implementing more features into the interactive teashop game.' },
+      { src: CapstoneHome, caption: 'This is the home page' , type:'video'},
+      { src: CapstoneCharacter, caption: 'This is the character page. When a character is clicked, a popup will show for that character with extra information about them' , type:'video'},
+      { src: CapstoneQuiz, caption: 'This is the quiz page. When a question card is clicked, the answer will be revealed' , type:'video'},
+      { src: CapstoneJasmineDragon1, caption: 'This is the interactive teashop game menu. I have added a how to play section and a highscore feature', type:'video' },
+      { src: CapstoneJasmineDragon2, caption: 'This is gameplay of how the game works. This first part shows how we have to clock in and then once we fail, it shows how many orders were done (in this case none)' , type:'video'},
+      { src: CapstoneJasmineDragon3, caption: 'This next part shows what happens after a game is lost (previous player saved in highscore), and what happens when one order is completed but fails the next.', type:'video' },
+      { src: CapstoneJasmineDragon4, caption: 'This final part shows what happens if we click start again instead of returning to menu, and that it will save each run as its own score (as it shows 2 Max) ', type:'video' },
 
 
     ],
@@ -106,7 +102,6 @@ const courseProjects = [
 const personalProjects = [
   {
     title: 'Personal Project 1',
-    description: 'This is a short description of Personal Project 1.',
     images: [
       { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'Image 1 of Personal Project 1' },
       { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'Image 2 of Personal Project 1' },
@@ -114,7 +109,6 @@ const personalProjects = [
   },
   {
     title: 'Personal Project 2',
-    description: 'This is a short description of Personal Project 2.',
     images: [
       { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'Image 1 of Personal Project 2' },
       { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'Image 2 of Personal Project 2' },
@@ -153,14 +147,15 @@ const Projects = () => {
 
   return (
     <>
+   
       {/* Course Projects Title */}
-      <h2>Course Projects</h2>
+      <h3>🎓Course Projects</h3>
 
       <Grid container spacing={2}>
         {courseProjects.map((project, index) => (
-          <Grid item xs={12} md={4} key={index} style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+          <Grid item xs={12} md={4} key={index} >
             <div
-              style={{ height: '500px', backgroundColor: 'transparent', cursor: 'pointer' }}
+             style={{ backgroundColor: 'transparent', cursor: 'pointer' }}
               onClick={() => handleClickOpen(project)}
             >
                <img src={project.previewImage} alt={project.title} width="300px" />
@@ -173,13 +168,13 @@ const Projects = () => {
       </Grid>
 
       {/* Personal Projects Title */}
-      <h2>Personal Projects</h2>
+      <h3>🚀Personal Projects</h3>
 
       <Grid container spacing={2}>
         {personalProjects.map((project, index) => (
-          <Grid item xs={12} md={4} key={index} style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+          <Grid item xs={12} md={4} key={index} >
             <div
-              style={{ height: '500px', backgroundColor: 'transparent', cursor: 'pointer' }}
+              style={{ backgroundColor: 'transparent', cursor: 'pointer' }}
               onClick={() => handleClickOpen(project)}
             >
               <img src={project.images[0].src} alt={project.title} width="300px" />

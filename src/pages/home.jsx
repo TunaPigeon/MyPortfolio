@@ -1,5 +1,8 @@
 
 import Grid from '@mui/material/Grid';
+import { Divider } from '@mui/material';
+
+
 
 const Home = () => {
 
@@ -9,8 +12,9 @@ const Home = () => {
     <>
       
     <h1>Jackie Fang</h1>
-    <h3>Aspiring Software Engineering</h3>
-    <h4>TEST</h4>
+    <h2>Aspiring Software Engineering</h2>
+    <Divider sx={{ width: '500px', borderColor: 'white', mx: 'auto', my: 4 }} />
+
     </>
   );
 };
