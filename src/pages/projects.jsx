@@ -25,6 +25,8 @@ import CharacterNotInDatabase from '../media/MiniProject3/CharacterNotInDatabase
 import CompletedStatus from '../media/MiniProject3/CompletedStatus.mp4';
 import DeleteOrder from '../media/MiniProject3/DeleteOrder.mp4';
 import Gameplay from '../media/MiniProject2/Gameplay.mp4';
+import RestOfTheWebsite from '../media/MiniProject2/RestOfTheWebsite.mp4';
+
 
 
 
@@ -55,7 +57,9 @@ const courseProjects = [
     description: 'This is a short description of Mini Project 2.',
     images: [
       { src: Gameplay, caption: 'I was tasked to create a dynamic and interactive frontend Application that uses the core principles of React. I updated my first project by creating it again in React, but with an additional interactive teashop game.' , type:'video'},
+      { src: RestOfTheWebsite, caption: 'Image 2 of Mini Project 2', type:'video' },
       { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'Image 2 of Mini Project 2' },
+
     ],
   },
   {
@@ -189,12 +193,13 @@ const Projects = () => {
     <div style={{ textAlign: 'center' }}>
       {selectedProject.images[currentImageIndex].type === 'video' ? (
         <video
-          controls
-          style={{ maxWidth: '100%', height: 'auto' }}
-        >
-          <source src={selectedProject.images[currentImageIndex].src} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        key={selectedProject.images[currentImageIndex].src} // 👈 this forces re-render
+        controls
+        style={{ maxWidth: '100%', height: 'auto' }}
+      >
+        <source src={selectedProject.images[currentImageIndex].src} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       ) : (
         <img
           src={selectedProject.images[currentImageIndex].src}
