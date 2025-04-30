@@ -39,15 +39,13 @@ const courseProjects = [
     description: 'Avatar Database',
     images: [
       { src: HomePagePreview, caption: 'I was tasked to create an Interactive Data-Driven Web Application, by combining HTML, CSS, JavaScript, charts for data representation, and leverage Fetch/Axios for data retrieval. The data i used belong to an Avatar API and i used that to create an Avatar Database.' },
-      { src: CharacterPagePreview, caption: 'This is the character page, showing off each character dataset provided by the api. With each character block, when clicked, it will expand and show information about the character. Video example shown next slide.' },
-      { src: CharacterPageVideo, caption: 'Video example of how the character page works', type:'video'},
-      { src: QuizPage, caption: 'This is the quiz page, showing off every question provided by the api, and when clicked, reveals the answer behind. Video example shown next slide' },
-      { src: QuizPageVideo, caption: 'Video example of how the quiz page works', type:'video'},
-      { src: ChartPage, caption: 'This is the chart page, showing off the number of episodes done by each director. This and the Contact Us page were done on seperate pages to show page navigation' },
-      { src: ContactUsPage, caption: 'This is the contact us page. This and the chart page were done on seperate pages to show page navigation' },
+      { src: CharacterPageVideo, caption: 'This is the character page, showing off each character dataset provided by the api. With each character block, when clicked, it will expand and show information about the character.', type:'video'},
+      { src: QuizPageVideo, caption: 'This is the quiz page, showing off every question provided by the api, and when clicked, reveals the answer behind.', type:'video'},
+      { src: ChartPage, caption: 'This is the chart page, showing off the number of episodes done by each director. This and the Contact Us page were done on seperate pages to show page navigation, which is why it looks different to the home, character and quiz page' },
+      { src: ContactUsPage, caption: 'This is the contact us page. This and the chart page were done on seperate pages to show page navigation, which is why it looks different to the home, character and quiz page' },
       { src: DifferentPagesVideo, caption: 'This video shows how the home page, character page and quiz page are all on one page and dynamically changes when clicking their buttons. Whereas for the chart page and contact us page, it goes to their own pages to show page navigation (as shown by the url changes).', type:'video' },
       { src: ThemeSelector, caption: 'I have a theme selector in the top left hand corner off the page. When clicked, it reveals 5 different themes (page is currently on Default). Each theme changes the pages for the home page, character page and the quiz page (not including chart page and contact us page as they are on seperate pages). Video example shown next slide.' },
-      { src: ThemeSelectorVideo, caption: 'Video example the theme changes the home page, character page, and then quiz page.' , type:'video'},
+      { src: ThemeSelectorVideo, caption: 'Video example the theme changes the home page, character page, and then quiz page. Does not affect the chart and contact us page.' , type:'video'},
       
     ],
   },
@@ -56,9 +54,9 @@ const courseProjects = [
     previewImage: CharacterPagePreview,
     description: 'This is a short description of Mini Project 2.',
     images: [
-      { src: Gameplay, caption: 'I was tasked to create a dynamic and interactive frontend Application that uses the core principles of React. I updated my first project by creating it again in React, but with an additional interactive teashop game.' , type:'video'},
-      { src: RestOfTheWebsite, caption: 'Image 2 of Mini Project 2', type:'video' },
-      { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'Image 2 of Mini Project 2' },
+      { src: CharacterPagePreview, caption: 'I was tasked to create a dynamic and interactive frontend Application that uses the core principles of React. I updated my first project by creating it again in React, but with an additional interactive teashop game.' },
+      { src: RestOfTheWebsite, caption: 'This was suppose to be an updated version of my mini project 1 web page, but as we did mini project 3 before this project, I came up with an idea of a teashop simulator (using the api used in mini project 3). It then went from a simulator to a game, which took up majority of the time, which is which these pages arent fully complete. Instead i was able to get an interactive teashop game working, shown in the next slide.', type:'video' },
+      { src: Gameplay, caption: 'This is the interactive teashop game, and the video shows gameplay of how it works. As the worker, we have to enter in the order and then click the ingredients required to make the order before the time runs out.' , type:'video'},
 
     ],
   },
