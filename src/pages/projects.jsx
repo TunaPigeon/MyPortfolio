@@ -101,19 +101,19 @@ const courseProjects = [
 
 const personalProjects = [
   {
-    title: 'Personal Project 1',
+    title: 'Invincible Database Website (WIP)',
     images: [
-      { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'Image 1 of Personal Project 1' },
-      { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'Image 2 of Personal Project 1' },
+      { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'To be added' },
+      { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'To be added' },
     ],
   },
-  {
-    title: 'Personal Project 2',
-    images: [
-      { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'Image 1 of Personal Project 2' },
-      { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'Image 2 of Personal Project 2' },
-    ],
-  },
+  // {
+  //   title: 'Personal Project 2',
+  //   images: [
+  //     { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'Image 1 of Personal Project 2' },
+  //     { src: 'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png', caption: 'Image 2 of Personal Project 2' },
+  //   ],
+  // },
 ];
 
 const Projects = () => {
