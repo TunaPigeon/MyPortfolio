@@ -13,6 +13,8 @@ const Home = () => {
       
     <h1>Jackie Fang</h1>
     <h2>Aspiring Software Engineering</h2>
+    <Divider sx={{ width: '500px', borderColor: 'white', mx: 'auto', my: 4 }} />
+
       <h3>
         Github to all the projects:{' '}
         <a href="https://github.com/TunaPigeon" target="_blank" rel="noopener noreferrer">
