@@ -46,7 +46,7 @@ const courseProjects = [
     title: 'Mini Project 1: Avatar Database',
     previewImage: HomePagePreview,
     images: [
-      { src: HomePagePreview, caption: 'I was tasked to create an Interactive Data-Driven Web Application, by combining HTML, CSS, JavaScript, charts for data representation, and leverage Fetch/Axios for data retrieval. The data i used belong to an Avatar API and i used that to create an Avatar Database.' },
+      { src: HomePagePreview, caption: 'I was tasked to create an Interactive Data-Driven Web Application, by combining HTML, CSS, JavaScript, charts for data representation, and leverage Fetch/Axios for data retrieval. The data i used belong to an Avatar API and i used that to create an Avatar Database. ' },
       { src: CharacterPageVideo, caption: 'This is the character page, showing off each character dataset provided by the api. With each character block, when clicked, it will expand and show information about the character.', type:'video'},
       { src: QuizPageVideo, caption: 'This is the quiz page, showing off every question provided by the api, and when clicked, reveals the answer behind.', type:'video'},
       { src: ChartPage, caption: 'This is the chart page, showing off the number of episodes done by each director. This and the Contact Us page were done on seperate pages to show page navigation, which is why it looks different to the home, character and quiz page' },
